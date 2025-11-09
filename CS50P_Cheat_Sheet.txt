@@ -1,0 +1,93 @@
+CS50P Python Cheat Sheet / Summary
+
+1. Basics
+- print(), input(), int(), float(), str(), len()
+- String methods: .lower(), .upper(), .strip(), .split(), .replace()
+- Comments: # single line, """ multi-line """
+- Type conversion: int("5"), str(10), float("3.14")
+- f-strings: print(f"Hello, {name}")
+
+2. Conditionals
+if x > 0:
+    print("Positive")
+elif x < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+3. Loops
+for i in range(5):
+    print(i)
+
+while condition:
+    # repeat until false
+
+4. Functions
+def greet(name="World"):
+    return f"Hello, {name}!"
+
+5. Data Structures
+List: ordered, mutable
+Tuple: ordered, immutable
+Set: unordered, unique values
+Dictionary: key-value pairs
+
+6. Exceptions
+try:
+    x = int(input("x: "))
+except ValueError:
+    print("Invalid input")
+
+7. File I/O
+with open("data.txt", "r") as file:
+    lines = file.readlines()
+
+8. Libraries & Modules
+import math
+from random import choice
+
+9. Unit Testing
+import pytest
+def test_add():
+    assert add(2, 3) == 5
+
+10. OOP
+class Student:
+    def __init__(self, name, house):
+        self.name = name
+        self.house = house
+
+11. Regular Expressions
+import re
+if re.search(r"^hello.*world$", text):
+    print("Match found!")
+
+12. Command-Line Arguments
+import sys
+print(sys.argv[1])
+
+13. Data Handling
+- csv, json usage
+- Sorting: students.sort(key=lambda s: s["name"])
+
+14. Final Project
+- Combine all concepts into a real-world app
+
+Core Mindset
+- Think computationally
+- Write clean and tested code
+- Debug effectively
+
+# ------------------------------------------------------
+# CS50P — Final Thoughts
+# ------------------------------------------------------
+
+# From print("hello, world") to building full programs,
+# this journey was more than just learning Python.
+# It was about learning to think logically,
+# to solve problems, and to write clean, efficient code.
+
+# Every function, loop, and bug fixed along the way
+# was a step toward becoming a better programmer.
+
+print("This was CS50P!")  # 🐍✨
